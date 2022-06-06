@@ -1,18 +1,26 @@
 <?php
 
-if (isset($_GET["submit"])) {
-	$dessert = $_GET["dessert"];
-if ($dessert == "ice") {
-$image = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/What_a_lovely_icecream.jpg/640px-What_a_lovely_icecream.jpg";
+//Show errors I like this!!
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-} else if ($dessert == "tira") {
-$image = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tiramisu_2022.jpg/640px-Tiramisu_2022.jpg";
+// Get pic data sent by GET
+// isset() tests for data at the gateway, required on many servers
+// Radio buttons pass values ($pic)
+// Displays selected $pic page
+if(isset($_GET["dessert"])) { $pic = $_GET["dessert"]; } else { $pic = ""; }
 
-} else if ($dessert == "cake") {
-$image = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Apple_coffee_cake.jpg/640px-Apple_coffee_cake.jpg";
-
+if($pic == "ice"){
+    print '<img src="ice.jpg">';
 }
-printf ("<img src="%s">",$image);
 
+if($pic == "tira"){
+    print '<img src="tira.jpg">';
 }
+
+if($pic == "cake"){
+    print '<img src="cake.jpg">';
+}
+
+
 ?>
