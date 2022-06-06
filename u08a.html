@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Pick A Dessert</title>
+<link rel="stylesheet" href="u08a.css">
+<link rel="stylesheet" href="u08a.php">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Handlee&display=swap" rel="stylesheet">
+
+<!--
+		Mika Laursen - U08A
+		Objectives demonstrated:
+		GET method for interactive user request to return desired picture via server.
+		Creation of picture request form using radio buttons.
+	-->
+
+
+</head>
+<body>
+
+        <!--title -->
+   <div id="header">
+   <h1>Mika Rose's Confections</h1>
+   </div>
+   <div id="content">
+<h2>Pick A Dessert</h2>
+
+<form action="u08a.php" method="get">
+  <input type="radio" id="ice" name="dessert" value="ice">
+  <label for="ice">I WANT AN ICE CREAM SUNDAE</label><br>
+  <input type="radio" id="tira" name="dessert" value="tira">
+  <label for="tira">I WANT TIRAMISU</label><br>
+  <input type="radio" id="cake" name="dessert" value="cake">
+  <label for="cake">I WANT A SLICE OF COFFEE CAKE</label>
+<br><br>
+<input type="submit" value=" Submit " name="submit" id="submit">
+</form>
+</div>
+
+</body>
+</html>
